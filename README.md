@@ -46,11 +46,11 @@ Manifest V3 Chromium extension that reduces browser rendering work in long ChatG
 **[COBALT CAPABILITIES](https://github.com/echelong/cobalt-capabilities)** &nbsp;<sub>JavaScript · MIT</sub><br />
 Optional companion for Cobalt Cockpit: explicit project memory through Hindsight and bounded browser evidence through Obscura. Both stay off until you configure them, and you run the services yourself.
 
-**[EVOLVE](https://github.com/echelong/evolve)** &nbsp;<sub>JavaScript · research · source-visible</sub><br />
-Experimental evolutionary trading-agent laboratory for Solana market data: deterministic replay, walk-forward evolution and matched A/B benchmarking. **Research and paper simulation only.** Every monetary figure is paper P&amp;L, and the repository has no wallet keys, no signer and no transaction path.
+**[EVOLVE](https://github.com/echelong/evolve)** &nbsp;<sub>JavaScript · research · no licence granted</sub><br />
+Experimental evolutionary trading-agent laboratory for Solana market data: deterministic replay, walk-forward evolution and matched A/B benchmarking. **Research and paper simulation only.** Every monetary figure is paper P&amp;L, simulated returns are not real profits, and paper results do not guarantee future profitability. The repository has no wallet keys, no signer and no transaction path.
 
-**[SAT//RECLAIMER](https://github.com/echelong/sat-reclaimer)** &nbsp;<sub>TypeScript · MIT · release candidate</sub><br />
-Non-custodial web app for deliberately spending the bitcoin locked in inscription-bearing Taproot UTXOs and sweeping it to an address you choose. **Not audited**, and Bitcoin transfers are irreversible. Read the [risk disclosure](https://github.com/echelong/sat-reclaimer/blob/master/docs/RISK.md) before using it.
+**[SAT//RECLAIMER](https://github.com/echelong/sat-reclaimer)** &nbsp;<sub>TypeScript · MIT · release candidate, source only</sub><br />
+Non-custodial web app for deliberately spending the bitcoin locked in inscription-bearing Taproot UTXOs and sweeping it to an address you choose. **Not audited.** Bitcoin transfers are irreversible, with no refund and no recovery path, and spending an inscription output can permanently affect whatever it carries. Read the [risk disclosure](https://github.com/echelong/sat-reclaimer/blob/master/docs/RISK.md) before using it.
 
 <div align="center">
   <picture>
