@@ -1,0 +1,13 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Local build and render scratch: source renders stay out of this repository
+/build/
+/out/
+/source-art/
+__pycache__/
+*.pyc
