@@ -37,13 +37,20 @@ I care about practical performance, transparent behaviour, maintainable code, an
 
 Public repositories I build and maintain. Status and licence are listed for each one, because they differ.
 
-| System | What it does |
-| :--- | :--- |
-| **[COBALT&nbsp;COCKPIT](https://github.com/echelong/cobalt-cockpit)**<br /><sub>TypeScript · MIT</sub> | Mission control for Claude Code. Follow real task progress, coordinate bounded subagents, review verification gates, and replay runs from a local Run Ledger. |
-| **[CHATSPEED&nbsp;2](https://github.com/echelong/ChatSpeed-2)**<br /><sub>TypeScript · MIT</sub> | Manifest V3 Chromium extension that reduces browser rendering work in long ChatGPT, Claude.ai, Grok, Gemini and DeepSeek conversations, with a platform-specific optimizer for each. Independent project, not affiliated with or endorsed by those platforms. |
-| **[COBALT&nbsp;CAPABILITIES](https://github.com/echelong/cobalt-capabilities)**<br /><sub>JavaScript · MIT</sub> | Optional companion for Cobalt Cockpit: explicit project memory through Hindsight and bounded browser evidence through Obscura. Both stay off until you configure them, and you run the services yourself. |
-| **[EVOLVE](https://github.com/echelong/evolve)**<br /><sub>JavaScript · research · source-visible</sub> | Experimental evolutionary trading-agent laboratory for Solana market data: deterministic replay, walk-forward evolution and matched A/B benchmarking. **Research and paper simulation only.** Every monetary figure is paper P&amp;L, and the repository has no wallet keys, no signer and no transaction path. |
-| **[SAT//RECLAIMER](https://github.com/echelong/sat-reclaimer)**<br /><sub>TypeScript · MIT · release candidate</sub> | Non-custodial web app for deliberately spending the bitcoin locked in inscription-bearing Taproot UTXOs and sweeping it to an address you choose. **Not audited**, and Bitcoin transfers are irreversible. Read the [risk disclosure](https://github.com/echelong/sat-reclaimer/blob/master/docs/RISK.md) before using it. |
+**[COBALT COCKPIT](https://github.com/echelong/cobalt-cockpit)** &nbsp;<sub>TypeScript · MIT</sub><br />
+Mission control for Claude Code. Follow real task progress, coordinate bounded subagents, review verification gates, and replay runs from a local Run Ledger.
+
+**[CHATSPEED 2](https://github.com/echelong/ChatSpeed-2)** &nbsp;<sub>TypeScript · MIT</sub><br />
+Manifest V3 Chromium extension that reduces browser rendering work in long ChatGPT, Claude.ai, Grok, Gemini and DeepSeek conversations, with a platform-specific optimizer for each. Independent project, not affiliated with or endorsed by those platforms.
+
+**[COBALT CAPABILITIES](https://github.com/echelong/cobalt-capabilities)** &nbsp;<sub>JavaScript · MIT</sub><br />
+Optional companion for Cobalt Cockpit: explicit project memory through Hindsight and bounded browser evidence through Obscura. Both stay off until you configure them, and you run the services yourself.
+
+**[EVOLVE](https://github.com/echelong/evolve)** &nbsp;<sub>JavaScript · research · source-visible</sub><br />
+Experimental evolutionary trading-agent laboratory for Solana market data: deterministic replay, walk-forward evolution and matched A/B benchmarking. **Research and paper simulation only.** Every monetary figure is paper P&amp;L, and the repository has no wallet keys, no signer and no transaction path.
+
+**[SAT//RECLAIMER](https://github.com/echelong/sat-reclaimer)** &nbsp;<sub>TypeScript · MIT · release candidate</sub><br />
+Non-custodial web app for deliberately spending the bitcoin locked in inscription-bearing Taproot UTXOs and sweeping it to an address you choose. **Not audited**, and Bitcoin transfers are irreversible. Read the [risk disclosure](https://github.com/echelong/sat-reclaimer/blob/master/docs/RISK.md) before using it.
 
 <div align="center">
   <picture>
