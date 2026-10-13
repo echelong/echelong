@@ -4,9 +4,8 @@
     python3 scripts/validate_profile.py            # offline checks
     python3 scripts/validate_profile.py --online   # also request every external URL
 
-Offline checks need only the standard library. GIF checks (frames, looping,
-visible motion, fallback size) run when Pillow is installed and are reported
-as skipped when it is not.
+GIF checks (frames, looping, visible motion, opacity, fallback size) need
+Pillow. If it is not installed they are reported as failed, not skipped.
 """
 import re
 import sys
@@ -44,15 +43,23 @@ def gif_checks(gif_path, png_path):
     try:
         from PIL import Image, ImageChops
     except ImportError:
-        print("SKIP  %s frame checks - Pillow not installed" % gif_path.name)
+        check(False, "%s frame checks ran" % gif_path.name,
+              "Pillow is not installed: python3 -m pip install pillow")
         return
+
+    def opaque(image):
+        return image.convert("RGBA").getextrema()[3][0] == 255
+
     gif = Image.open(gif_path)
-    frames, durations = [], []
+    frames, durations, solid = [], [], True
     for index in range(gif.n_frames):
         gif.seek(index)
         durations.append(gif.info.get("duration", 0))
+        solid = solid and opaque(gif)
         frames.append(gif.convert("RGB").resize((240, 60)))
     check(len(frames) >= 8, "%s is animated" % gif_path.name, "%d frames" % len(frames))
+    # No transparent pixels, so the page background never shows through in any theme.
+    check(solid, "%s is opaque in every frame" % gif_path.name)
     check(gif.info.get("loop") == 0, "%s loops forever" % gif_path.name)
     check(min(durations) >= 20, "%s frame delays are browser-safe" % gif_path.name,
           "%d-%d ms" % (min(durations), max(durations)))
@@ -70,6 +77,7 @@ def gif_checks(gif_path, png_path):
     still = Image.open(png_path)
     check(still.size == gif.size, "%s matches %s in size" % (png_path.name, gif_path.name),
           "%dx%d" % gif.size)
+    check(opaque(still), "%s is opaque" % png_path.name)
 
 
 def main():
